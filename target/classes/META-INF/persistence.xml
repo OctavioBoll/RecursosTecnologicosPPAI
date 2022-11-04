@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="ppai01">
+        <class>EntityDos.Asignacioncientificoci</class>
+        <class>EntityDos.Cambioestadort</class>
+        <class>EntityDos.Cambioestadoturno</class>
+        <class>EntityDos.Centrodeinvestigacion</class>
+        <class>EntityDos.Estado</class>
+        <class>EntityDos.Marca</class>
+        <class>EntityDos.Modelo</class>
+        <class>EntityDos.Personalcientifico</class>
+        <class>EntityDos.Recursotecnologico</class>
+        <class>EntityDos.Sesion</class>
+        <class>EntityDos.Tiporecursotecnologico</class>
+        <class>EntityDos.Turno</class>
+        <class>EntityDos.Usuario</class>
+        <!--        <class>Entity.Usuario</class>-->
+<!--        <class>Entity.Asignacioncientificoci</class>-->
+<!--        <class>Entity.Asignaciondirectorci</class>-->
+<!--        <class>Entity.Asignacionresponsabletecnicort</class>-->
+<!--        <class>Entity.Cambioestadort</class>-->
+<!--        <class>Entity.Cambioestadoturno</class>-->
+<!--        <class>Entity.Caracteristica</class>-->
+<!--        <class>Entity.Caracteristicarecurso</class>-->
+<!--        <class>Entity.Estado</class>-->
+<!--        <class>Entity.Extencionmantenimiento</class>-->
+<!--        <class>Entity.Facultad</class>-->
+<!--        <class>Entity.Horariort</class>-->
+<!--        <class>Entity.Mantenimiento</class>-->
+<!--        <class>Entity.Marca</class>-->
+<!--        <class>Entity.Modelo</class>-->
+<!--        <class>Entity.Personalcientifico</class>-->
+<!--        <class>Entity.Recursotecnologico</class>-->
+<!--        <class>Entity.Tiporecursotecnologico</class>-->
+<!--        <class>Entity.Turno</class>-->
+<!--        <class>Entity.Usuario</class>-->
+<!--        <class>Entity.Centrodeinvestigacion</class>-->
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/gestiondert"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.user" value="root"/>
+            <property name="hibernate.connection.password" value=" "/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/gestiondert</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <!--    <mapping class="Entity.Asignacioncientificoci"/>-->
+<!--      <mapping class="Entity.Asignaciondirectorci"/>-->
+<!--      <mapping class="Entity.Asignacionresponsabletecnicort"/>-->
+<!--      <mapping class="Entity.Cambioestadort"/>-->
+<!--      <mapping class="Entity.Cambioestadoturno"/>-->
+<!--      <mapping class="Entity.Caracteristica"/>-->
+<!--      <mapping class="Entity.Caracteristicarecurso"/>-->
+<!--      <mapping class="Entity.Centrodeinvestigacion"/>-->
+<!--    <mapping class="Entity.Estado"/>-->
+<!--    <mapping class="Entity.Extencionmantenimiento"/>-->
+<!--    <mapping class="Entity.Facultad"/>-->
+<!--    <mapping class="Entity.Horariort"/>-->
+<!--    <mapping class="Entity.Mantenimiento"/>-->
+<!--    <mapping class="Entity.Marca"/>-->
+<!--    <mapping class="Entity.Modelo"/>-->
+<!--    <mapping class="Entity.Personalcientifico"/>-->
+<!--    <mapping class="Entity.Recursotecnologico"/>-->
+<!--    <mapping class="Entity.Tiporecursotecnologico"/>-->
+<!--    <mapping class="Entity.Turno"/>-->
+<!--    <mapping class="Entity.Usuario"/>-->
+      <mapping class="EntityDos.Asignacioncientificoci"/>
+    <mapping class="EntityDos.Cambioestadort"/>
+    <mapping class="EntityDos.Cambioestadoturno"/>
+    <mapping class="EntityDos.Centrodeinvestigacion"/>
+    <mapping class="EntityDos.Estado"/>
+    <mapping class="EntityDos.Marca"/>
+    <mapping class="EntityDos.Modelo"/>
+    <mapping class="EntityDos.Personalcientifico"/>
+    <mapping class="EntityDos.Recursotecnologico"/>
+    <mapping class="EntityDos.Sesion"/>
+    <mapping class="EntityDos.Tiporecursotecnologico"/>
+    <mapping class="EntityDos.Turno"/>
+    <mapping class="EntityDos.Usuario"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
